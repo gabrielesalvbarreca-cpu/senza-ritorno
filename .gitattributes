@@ -1,0 +1,4 @@
+# Fine riga fissi per gli script di Gradle, qualunque sia il sistema
+/gradlew        text eol=lf
+*.bat           text eol=crlf
+*.jar           binary

@@ -1,0 +1,17 @@
+# Gradle
+.gradle/
+build/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Sistema operativo ed editor
+.DS_Store
+*.swp
+
+# Wiki: si pubblica nel repository senza-ritorno.wiki
+wiki/
