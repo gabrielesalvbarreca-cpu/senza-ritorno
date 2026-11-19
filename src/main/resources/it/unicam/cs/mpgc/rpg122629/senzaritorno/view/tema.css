@@ -1,0 +1,107 @@
+/*
+ * Senza Ritorno: tema scuro da console di bordo fantascientifica.
+ * Volutamente semplice: colori, spaziature e un titolo in stile terminale bastano
+ * a rendere l'atmosfera del gioco di ruolo, senza immagini né effetti pesanti.
+ */
+
+.root {
+    -fx-background-color: linear-gradient(to bottom, #0a0e17, #101a2b);
+    -fx-font-family: "Segoe UI", "SansSerif";
+    -fx-font-size: 14px;
+}
+
+/* Testo chiaro per tutte le etichette; titolo e sottotitolo qui sotto lo sovrascrivono. */
+.label {
+    -fx-text-fill: #d6e0ea;
+}
+
+.titolo {
+    -fx-font-family: "Consolas", "Monospaced";
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #5cf2d6;
+    -fx-effect: dropshadow(gaussian, #2de2c366, 14, 0.3, 0, 0);
+}
+
+.sottotitolo {
+    -fx-font-size: 18px;
+    -fx-text-fill: #9fb3c8;
+}
+
+/* Pannelli: riquadri con bordo per statistiche e stato del combattimento (effetto console). */
+.pannello {
+    -fx-background-color: #10182bcc;
+    -fx-background-radius: 6;
+    -fx-border-color: #24405e;
+    -fx-border-radius: 6;
+    -fx-border-width: 1;
+}
+
+.button {
+    -fx-background-color: #16213a;
+    -fx-text-fill: #d6e0ea;
+    -fx-background-radius: 4;
+    -fx-border-color: #2b4a6f;
+    -fx-border-radius: 4;
+    -fx-border-width: 1;
+    -fx-padding: 8 16 8 16;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #1f2f52;
+    -fx-border-color: #5cf2d6;
+    -fx-text-fill: #5cf2d6;
+}
+
+.button:disabled {
+    -fx-opacity: 0.4;
+}
+
+.pulsante-menu {
+    -fx-pref-width: 220;
+    -fx-font-size: 16px;
+}
+
+.text-field, .combo-box, .list-view {
+    -fx-background-color: #0d1320;
+    -fx-text-fill: #d6e0ea;
+    -fx-border-color: #24405e;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.list-view .list-cell {
+    -fx-background-color: #0d1320;
+    -fx-text-fill: #d6e0ea;
+}
+
+.list-view .list-cell:odd {
+    -fx-background-color: #101a2b;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #d6e0ea;
+}
+
+.diario {
+    -fx-control-inner-background: #060912;
+    -fx-text-fill: #b8c6d6;
+    -fx-font-family: "Consolas", "Monospaced";
+}
+
+/* Barre della salute: verde per il giocatore, rosso per il nemico. */
+.progress-bar > .track {
+    -fx-background-color: #0d1320;
+    -fx-background-radius: 4;
+}
+
+.barra-salute > .bar {
+    -fx-background-color: #3ddc84;
+    -fx-background-radius: 4;
+}
+
+.barra-salute-nemico > .bar {
+    -fx-background-color: #e35d5d;
+    -fx-background-radius: 4;
+}
